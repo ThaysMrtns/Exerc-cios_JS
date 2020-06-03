@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        //Função que verifica se usuário pode beber bebidadas alcoólicas
+        function verificaBeber(usuarioIdade, idadeBeber){
+            if(usuarioIdade <= idadeBeber){
+                document.write("Vai tomar suquinho. Nada de alcoól. Você tem " + usuarioIdade + " anos.");
+            }
+            else if(usuarioIdade >= idadeBeber){
+                document.write("Pode beber alcoól. Você tem " + usuarioIdade + " anos.")
+            }
+        }
+        //Chamando função e atribuindo os valores dela
+        verificaBeber(10, 18);
+    </script>
+</html>

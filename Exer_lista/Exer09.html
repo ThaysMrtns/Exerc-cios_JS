@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+        //Função para verificar se pode dirigir de acordo com a idade
+        function podeDirigir(idadeUsuario, idadeDirigir){
+            if(idadeUsuario <= idadeDirigir){
+                document.write("Ainda não colega. Espera mais um pouco. Você só tem " + idadeUsuario + " anos.");
+            }
+            else if (idadeUsuario >= 70){
+                document.write("Dirija com extremo cuidado e atenção. Sua idade é de " + idadeUsuario + " anos.");
+            }
+            else{
+                document.write("Você pode dirigir. Você tem " + idadeUsuario +" anos");
+            }
+        }
+        //Chamando a função e atribuindo o valor dos parâmetros
+        podeDirigir(70, 18);
+    </script>
+</html>
