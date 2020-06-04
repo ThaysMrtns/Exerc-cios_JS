@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <script>
+
+        //Função que faz um pedido
+        function fazerPedido(pedido){
+            //Receber pedido como um número
+            pedido = parseInt(prompt("Escreva o número do seu pedido"));
+            return pedido;
+        }  
+
+        //Exibir menu de bebidas
+        document.write("<ol> <li>Refrigerante</li> <li>Suco</li> <li>Água</li> </ol> <br>");
+
+        //Chamar a função em uma variável e exibi-lá em um document.write
+        var conta = document.write("Meu pedido é: " + fazerPedido());  
+
+        
+        
+    </script>
+</html>
