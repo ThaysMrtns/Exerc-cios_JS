@@ -4,32 +4,32 @@
         <meta charset="UTF-8">
     </head>
     <script>
-        //Função que apresenta bebidas
-        function barBebida(){
-            //Chamando função garçon ao completar 1 segundo
-            var garcon = setTimeout(alertGarcon, 1000);
-
-            //Chamando função fazer pedido ao completar 3 segundos
-            var pedido = setTimeout(fazerPedido, 3000);
-
-            //Exibir menu de bebidas
-            document.write("<ol><li>Refrigerante</li> <li>Suco</li> <li>Água</li> </ol> <br>");
-
-            //Receber pedido
-            
-        }
-
-        //Função que envia um alerta 
-        function alertGarcon(){
-            alert("Faça o seu pedido!");
-        }
 
         //Função que faz um pedido
-        function fazerPedido(){
-            var pedido = prompt("Qual o seu pedido?");
-        }
+        function fazerPedido(pedido){
+            pedido = prompt("Escreva o número do seu pedido");
 
-        //Chamando função   
-        barBebida();
+            if(pedido == 1){
+                document.write("Você pediu refrigerante <br>");
+            }
+            else if(pedido == 2){
+                document.write("Você pediu suco <br>");
+            }
+            else if(pedido == 3){
+                document.write("Você pediu água <br>");
+            }
+            else{
+                document.write("Por favor, olhe o nosso menu. Você pediu errado. <br>")
+            }
+
+           return pedido;
+        }  
+
+        //Exibir menu de bebidas
+        document.write("<ol> <li>Refrigerante</li> <li>Suco</li> <li>Água</li> </ol> <br>");
+
+        //Chamar a função em uma variável
+        var conta = fazerPedido();  
+        
     </script>
 </html>
